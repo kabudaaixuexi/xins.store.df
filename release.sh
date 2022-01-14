@@ -33,7 +33,7 @@ NEWVERSION="$V1.$V2.$V3"
 read -p "发布新版本 $NEWVERSION (原版本$VERSION) - 确定? (y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  echo "开始发布..."
+  echo "开始发布"
 #   if [[ -z $SKIP_TESTS ]]; then
 #     npm run lint
 #     npm run flow
@@ -93,10 +93,10 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   npm version "$NEWVERSION" --message "build: release $NEWVERSION"
 
   # publish
-  echo "开始上传到git代码库.."
+  echo "开始上传代码到远程库"
   git push
   
-  echo "开始上传到npm.."
+  echo "开始上传npm包"
   if [[ -z $RELEASE_TAG ]]; then
     echo "提交新的npm包版本"
     npm publish
