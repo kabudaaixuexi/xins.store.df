@@ -93,11 +93,10 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   npm version "$NEWVERSION" --message "build: release $NEWVERSION"
 
   # publish
-  echo "开始上传到git代码库"
-  git push origin refs/tags/v"$NEWVERSION"
+  echo "开始上传到git代码库.."
   git push
   
-  echo "开始上传到npm"
+  echo "开始上传到npm..."
   if [[ -z $RELEASE_TAG ]]; then
     echo "提交新的npm包版本"
     npm publish
