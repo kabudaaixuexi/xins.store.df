@@ -96,7 +96,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "开始上传到git代码库.."
   git push
   
-  echo "开始上传到npm..."
+  echo "开始上传到npm.."
   if [[ -z $RELEASE_TAG ]]; then
     echo "提交新的npm包版本"
     npm publish
@@ -104,4 +104,4 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "提交新的npm包版本"
     npm publish --tag "$RELEASE_TAG"
   fi
-fi
+echo "Release Success!"
