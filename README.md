@@ -80,6 +80,6 @@ moon.$_set({
 
 ### **总结**
 
-storedf是一个很小型的工具函数，核心代码约30行，本意是实现一个微型的redux，只做数据层的处理，所以当涉及到视图层的时候需要利用watch函数主动更新试图，代码比较简单，毕竟出自本菜鸡之手 >-r
+storedf是一个很小型的工具函数，核心代码约30行，本意是实现一个微型的redux，只做数据层的处理，所以当涉及到视图层的时候需要利用watch函数主动更新视图，代码比较简单，毕竟出自本菜鸡之手 >-r
 
 [webpack5联邦模块学习点击这里](https://webpack.docschina.org/blog/2020-12-08-roadmap-2021/#hot-module-replacement-for-module-federation "Module Federation")
