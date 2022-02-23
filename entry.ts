@@ -1,7 +1,7 @@
 /**
  * @auther xins
  * @param data 
- * @param self Mounted object
+ * @param self Mounted object 
  * @param persistedState Persistent？
  * @returns 
  */
