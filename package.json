@@ -1,6 +1,6 @@
 {
   "name": "xins.store.df",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "entry.js",
   "source": "entry.ts",
