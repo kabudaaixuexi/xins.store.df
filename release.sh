@@ -94,14 +94,14 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
   # publish
   echo "开始上传代码到远程库"
-  git push
+  git push origin/dev
   
   echo "开始上传npm包"
   if [[ -z $RELEASE_TAG ]]; then
     echo "提交新的npm包版本"
-    npm publish
+    sudo npm publish
   else
     echo "提交新的npm包版本"
-    npm publish --tag "$RELEASE_TAG"
+    sudo npm publish --tag "$RELEASE_TAG"
   fi
 echo "Release Success!"
