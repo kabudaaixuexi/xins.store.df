@@ -3,7 +3,7 @@
  * @param data 
  * @param self Mounted object 
  * @param persistedState Persistent？
- * @returns 
+ * @returns {}
  */
 const moon = (data: any, self:any, persistedState?:boolean) => {
 	const _self = self
