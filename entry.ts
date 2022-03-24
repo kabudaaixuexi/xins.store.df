@@ -2,7 +2,7 @@
  * @auther nr
  * @param data 
  * @param self Mounted object 
- * @param persistedState Persistent？
+ * @param persistedState Persistent
  * @returns {}
  */
 const moon = (data: any, self:any, persistedState?:boolean) => {
