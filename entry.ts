@@ -1,6 +1,6 @@
 /**
  * @auther nr 
- * @param data 
+ * @param data
  * @param self Mounted object 
  * @param persistedState Persistent
  * @returns {}
