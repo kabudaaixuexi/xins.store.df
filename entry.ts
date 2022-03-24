@@ -1,5 +1,5 @@
 /**
- * @auther nr 
+ * @auther nr
  * @param data
  * @param self Mounted object 
  * @param persistedState Persistent

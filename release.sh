@@ -94,7 +94,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
   # publish
   echo "开始上传代码到远程库"
-  git push origin/dev
+  git push
   
   echo "开始上传npm包"
   if [[ -z $RELEASE_TAG ]]; then
